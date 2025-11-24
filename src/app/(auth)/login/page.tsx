@@ -6,8 +6,6 @@ import { Heading } from '@/components/heading'
 import { Input } from '@/components/input'
 import { Strong, Text, TextLink } from '@/components/text'
 import type { Metadata } from 'next'
-import NextAuth from "next-auth"
-import GithubProvider from "next-auth/providers/github"
 
 
 export const metadata: Metadata = {
