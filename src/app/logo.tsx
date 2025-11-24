@@ -6,6 +6,8 @@ export function Logo({ className, ...props }: React.ComponentPropsWithoutRef<'sv
     viewBox="0 0 818.12 87.73"
     {...props}
   >
+
+    
           <g transform="scale(0.5)">
 
     <defs>

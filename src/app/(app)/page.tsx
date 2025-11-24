@@ -50,9 +50,9 @@ let queues = await getQueueMetrics()
   <div className=" mt-10 flex items-end justify-between gap-4">
       </div>
           <div className="mt-4 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
-                      {queues.map((queue) => (
+                      {queues.map((queue,i) => (
 
-              <Stat title={nameShortener(queue.queue)} value={(queue.size).toString()} change="+4.5%" />
+              <Stat key={i} title={nameShortener(queue.queue)} value={(queue.size).toString()} change="+4.5%" />
               
                         ))}
 

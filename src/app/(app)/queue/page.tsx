@@ -45,31 +45,13 @@ export default async function Queues() {
         <Button className="-my-0.5">Refresh Data</Button>
       </div>
           <div className="mt-4 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
-                      {queues.map((queue) => (
+                      {queues.map((queue,i) => (
 
-              <Stat title={nameShortener(queue.queue)} value={(queue.size).toString()} change="+4.5%" />
+              <Stat key={i} title={nameShortener(queue.queue)} value={(queue.size).toString()} change="+4.5%" />
               
                         ))}
 
             </div>
-      {/* <Table className="mt-8 [--gutter:--spacing(6)] lg:[--gutter:--spacing(10)]">
-        <TableHead>
-          <TableRow>
-            <TableHeader>Queues</TableHeader>
-            <TableHeader>Size</TableHeader>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {queues.map((queue) => (
-            <TableRow key={queue.queue} title={`Queue #${queue.queue}`}>
-              
-              <TableCell>{nameShortener(queue.queue)}</TableCell>
-              <TableCell>{queue.size}</TableCell>
-
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table> */}
     </>
   )
 }
