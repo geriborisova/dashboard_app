@@ -1,10 +1,5 @@
 import { Logo } from '@/app/logo'
-import { Button } from '@/components/button'
-import { Checkbox, CheckboxField } from '@/components/checkbox'
-import { Field, Label } from '@/components/fieldset'
 import { Heading } from '@/components/heading'
-import { Input } from '@/components/input'
-import { Strong, Text, TextLink } from '@/components/text'
 import type { Metadata } from 'next'
 
 
