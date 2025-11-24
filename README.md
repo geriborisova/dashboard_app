@@ -1,6 +1,6 @@
-# Catalyst Demo
+# Dashboard App
 
-To run the Catalyst demo, first install the npm dependencies:
+To run the app, first install the npm dependencies:
 
 ```bash
 npm install
